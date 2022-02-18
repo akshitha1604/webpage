@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CentSynth</title>
+        <meta name="viewport" content="with=device-width, intial-scale=1.0">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/861728579d.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="main"> 
+        
+            <div class="navbar">
+                <div class="icon">
+                    <img src="{{ url_for('static', filename='images/3.png.png') }}" class="logo">
+                    <div class="menu">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="GetStarted.html">Get Started</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <img src="{{ url_for('static', filename='images/9.png') }}" width="100%" height="700px">
+            <div class="row">
+                <div class="col">
+                
+                    <h1>CentSynth</h1>
+                    <h5>Aizynthfinder is a tool for retrosynthetic planning. The algorithm is based on a Monte Carlo tree search that recursively breaks down a molecule to purchasable precursors</h5>
+                </div>
+                <div class="img">
+                    
+                </div>
+            </div>
+
+        </div>
+    <!-- ...............about Aizynfinder............ -->
+
+        <section class="about">
+            <h1>About CentSynth</h1>
+            <div class="box">
+            </div>
+            <div class="text">
+                <h1>Synthesis process for predicting Chemical Reactions</h1>
+                <p>The magic behind the app is a set of Language Models based on Transformers that can predict the most likely outcome of a Chemical Reaction or understand natural language description of Chemical Procedures.
+                    The service is currently used across several laboratories around the world for automation experiments involving AI, where robots can learn in real-time, based on feedback from IBM RXN and wet-lab experiments. Humans and machines coming together to discover – that is powerful.
+                </p>
+            </div>
+            <div class="image">
+            <img src="{{ url_for('static', filename='images/4.png.PNG') }}">
+
+            </div>
+
+        </section>
+        <!-- .........footer............ -->
+        <section class="footer">
+            <h1 class="logo1">CentSynth</h1>
+            <p class="terms">©2022 Centella scientific private limited. All Rights reserved</p>
+            <div class="social-links">
+                <a href="https://www.facebook.com/centella.scientific1"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/centella.scientific/"><i class="fab fa-instagram"></i></a>
+                <a href="https://twitter.com/centellascient1"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/company/centellascientific/"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.youtube.com/channel/UCAdelmyMPBzu2WqiHc6Mh8w"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div class="links">
+                <a href="index.html">Home</a>
+                <a href="#">About Us</a>
+                <a href="GetStarted.html">Get Started</a>
+            </div>
+
+        </section>
+        <!-- ...............How it Works............ -->
+      <section class="works">
+        <h1>How it works</h1>
+        <div class="box1">
+        </div>
+        <div class="text1">
+            <h1>Design your Retrosynthesis using either the automatic or the interactive mode.</h1>
+            <p>The Retrosynthetic Pathways predictor accounts for all the relevant aspects examined by humans when designing a Retrosynthesis. Our models for Chemical Reaction and Retrosynthesis prediction are trained on a set of 2.5 million Chemical Reactions.
+
+                In automatic mode, you can simply draw your molecule setting some constraints on the budget, and IBM RXN for Chemistry will explore with its models the chemical space to recommends full synthesis routes.
+                
+                In the interactive mode, IBM RXN for Chemistry acts as an AI-powered assistant: the system recommends disconnections and you choose your favorite option.
+               
+            </p>
+        </div>
+        <div class="image1">
+        <img src="{{ url_for('static', filename='images/5.png.PNG') }}">
+        </div>
+    </section>
+
+    </body>
+</html> 
